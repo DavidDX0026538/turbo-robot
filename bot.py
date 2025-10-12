@@ -49,7 +49,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # Константы
-TELEGRAM_TOKEN = "7480018246:AAGZkByeWJBgqjJUZSB-twk8Lmn4-Ugrmu0"  # Ваш токен без пробелов
+TELEGRAM_TOKEN = " "  # Ваш токен без пробелов
 WEATHER_API_KEY = "0a5e8cb7cca0305ba14f4810ca774ddf"  # Ваш API ключ OpenWeatherMap
 WEATHER_API_URL = "https://api.openweathermap.org/data/2.5/weather"
 
@@ -170,4 +170,5 @@ def main() -> None:
     application.run_polling()
 
 if __name__ == "__main__":
+
     main()
