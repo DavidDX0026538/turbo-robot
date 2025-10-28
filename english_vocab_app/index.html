@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>English Bloom — тренажёр слов</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="gradient"></div>
+    <main class="app" aria-live="polite">
+      <header class="app__header">
+        <div>
+          <h1 class="app__title">English Bloom</h1>
+          <p class="app__subtitle">
+            Карточки для запоминания слов и выражений, которые хочется повторять снова и снова.
+          </p>
+        </div>
+        <div class="progress" role="status">
+          <span class="progress__label">Прогресс</span>
+          <div class="progress__bar">
+            <div class="progress__bar-fill" id="progress-fill"></div>
+          </div>
+          <span class="progress__value" id="progress-value">0 / 0</span>
+        </div>
+      </header>
+
+      <section class="card" id="card">
+        <div class="card__pill" id="word-level">C1 • Впечатлять</div>
+        <h2 class="card__word" id="word">Serendipity</h2>
+        <p class="card__transcription" id="transcription">/ˌser.ənˈdɪp.ɪ.ti/</p>
+        <p class="card__translation" id="translation">Счастливая случайность</p>
+        <p class="card__context" id="context">
+          Their meeting was pure serendipity — they both missed the same train and stayed for coffee.
+        </p>
+        <div class="card__tags" id="tags"></div>
+      </section>
+
+      <div class="controls">
+        <button class="control control--ghost" id="reveal" type="button">
+          Показать перевод
+        </button>
+        <div class="controls__group">
+          <button class="control" id="repeat" type="button">Повторить позже</button>
+          <button class="control control--accent" id="know" type="button">
+            Запомнил(а)
+          </button>
+        </div>
+      </div>
+
+      <footer class="app__footer">
+        <p>
+          Совет: старайтесь представить ситуацию из примера или придумать свою, чтобы слово закрепилось.
+        </p>
+      </footer>
+    </main>
+
+    <template id="tag-template">
+      <span class="tag"></span>
+    </template>
+
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
