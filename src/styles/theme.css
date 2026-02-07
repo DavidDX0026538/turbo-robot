@@ -1,0 +1,30 @@
+:root {
+  color-scheme: light dark;
+  font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+}
+
+.app.light {
+  --bg: #f7f7fb;
+  --panel: #ffffff;
+  --panel-secondary: #f0f1f7;
+  --text: #1c1d22;
+  --text-muted: #5c6170;
+  --border: #e2e4ef;
+  --accent: #4d5bff;
+  --accent-soft: rgba(77, 91, 255, 0.15);
+  --danger: #d64545;
+  --success: #1f9d72;
+}
+
+.app.dark {
+  --bg: #0f1116;
+  --panel: #171a21;
+  --panel-secondary: #1f2430;
+  --text: #f3f5f7;
+  --text-muted: #a5adbd;
+  --border: #2c3342;
+  --accent: #8f9bff;
+  --accent-soft: rgba(143, 155, 255, 0.2);
+  --danger: #ff6b6b;
+  --success: #4dd4a8;
+}
